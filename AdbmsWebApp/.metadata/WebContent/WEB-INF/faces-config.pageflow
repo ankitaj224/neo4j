@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf14807030694290" configfile="/AdbmsWebApp/WebContent/WEB-INF/faces-config.xml">
+  <nodes xsi:type="pageflow:PFPage" name="index" id="pf14807033612351" referenceLink="//@navigationRule.0/@fromViewId|" outlinks="pf14807033612352 pf14807033612353" path="/index.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="addCrime" id="pf14807033612364" referenceLink="//@navigationRule.0/@navigationCase.0/@toViewId|" inlinks="pf14807033612352" path="/addCrime.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="viewCrime" id="pf14807033612365" referenceLink="//@navigationRule.0/@navigationCase.1/@toViewId|" inlinks="pf14807033612353" path="/viewCrime.jsp"/>
+  <links id="pf14807033612352" target="pf14807033612364" source="pf14807033612351" outcome="SuccessAdd"/>
+  <links id="pf14807033612353" target="pf14807033612365" source="pf14807033612351" outcome="SuccessView"/>
+</pageflow:Pageflow>
